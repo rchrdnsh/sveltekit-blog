@@ -8,7 +8,7 @@ export default function headings() {
     }
 
     vFile.data.headings = [];
-		
+    
     visit(tree, 'heading', (node) => {
       vFile.data.headings.push({
         level: node.depth,

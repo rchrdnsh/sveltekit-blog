@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from './mdsvex.config.js';
+import { VitePWA } from 'vite-plugin-pwa'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,6 +12,11 @@ const config = {
   kit: {
     target: '#svelte',
     adapter: adapter(),
+    vite: {
+      plugins: [
+        VitePWA()
+      ]
+    }
   }
 };
 
