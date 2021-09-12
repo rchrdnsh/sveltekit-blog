@@ -11,7 +11,7 @@ const config = {
   },
   remarkPlugins: [
     abbr,
-    headings()
+    headings
   ],
   rehypePlugins: [
     slug,
